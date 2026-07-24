@@ -1,0 +1,38 @@
+<head>
+<title>Cross the Road</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div id="game-container">
+
+    <h1 id="game-title">Cross the Road</h1>
+
+    <div id="hud">
+      <div class="hud-item">Score<br><span id="score">0</span></div>
+      <div class="hud-item">Level<br><span id="level">1</span></div>
+      <div class="hud-item">Lives<br><span id="lives">❤️❤️❤️</span></div>
+      <div class="hud-item">High Score<br><span id="high-score">0</span></div>
+    </div>
+
+    <div id="canvas-wrapper">
+      <canvas id="game-canvas"></canvas>
+      <div id="level-banner" class="hidden"></div>
+
+      <div id="game-over-screen" class="hidden">
+        <div class="game-over-box">
+          <h2>💀 Game Over</h2>
+          <p>Your Score: <span id="final-score">0</span></p>
+          <p id="new-high-score-msg" class="hidden">New High Score!</p>
+          <p class="muted">High Score: <span id="final-high-score">0</span></p>
+          <button id="try-again-btn">Try Again</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="instructions">Use Arrow Keys / WASD to move. Reach the top row to clear the level.</p>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
